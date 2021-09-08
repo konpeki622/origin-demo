@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "license": "ISC",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "dev": "node ../origin.js-1/packages/cli/dist/bin/ori.js dev",
+    "build": "node ../origin.js-1/packages/cli/dist/bin/ori.js build",
     "serve": "vite preview"
   },
   "dependencies": {
