@@ -3,27 +3,24 @@
   "version": "1.0.0",
   "license": "ISC",
   "scripts": {
-    "dev": "node ../origin.js-1/packages/cli/dist/bin/ori.js dev",
-    "build": "node ../origin.js-1/packages/cli/dist/bin/ori.js build",
+    "dev": "node ../origin.js/packages/cli/dist/bin/ori.js dev",
+    "build": "node ../origin.js/packages/cli/dist/bin/ori.js build",
     "serve": "vite preview"
   },
   "dependencies": {
-    "@originjs/vite-plugin-assets": "file:lib/vite-plugin-assets",
-    "@originjs/vite-plugin-content": "file:lib/vite-plugin-content",
-    "@originjs/vite-plugin-pages": "file:lib/vite-plugin-pages",
+    "@originjs/vite-plugin-assets": "file:../origin.js/packages/vite-plugin-assets",
+    "@originjs/vite-plugin-content": "file:../origin.js/packages/vite-plugin-content",
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
+    "vite-plugin-pages": "file:../origin.js/packages/vite-plugin-pages",
     "vue": "^3.0.5",
     "vue-router": "^4.0.11"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.3.0",
     "@vue/compiler-sfc": "^3.0.5",
-    "assets": "file:lib/vite-plugin-assets",
-    "contenty": "file:lib/vite-plugin-content",
     "install": "^0.13.0",
     "npm": "^7.22.0",
-    "pages": "file:lib/vite-plugin-pages",
     "ts-loader": "^9.2.5",
     "typescript": "^4.4.2",
     "unplugin-vue-components": "^0.14.13",

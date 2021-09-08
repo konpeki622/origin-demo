@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import assetsPlugin from './lib/vite-plugin-assets/dist/index'
-import pagesPlugin from './lib/vite-plugin-pages/dist/src/index'
-import contentPlugin from './lib/vite-plugin-content/dist/src/index'
+import assetsPlugin from '@originjs/vite-plugin-assets'
+import pagesPlugin from 'vite-plugin-pages'
+import contentPlugin from '@originjs/vite-plugin-content'
 // import Components from 'unplugin-vue-components/vite'
 
 // https://vitejs.dev/config/
