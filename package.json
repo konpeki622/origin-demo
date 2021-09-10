@@ -3,16 +3,17 @@
   "version": "1.0.0",
   "license": "ISC",
   "scripts": {
-    "dev": "node ../origin.js/packages/cli/dist/bin/ori.js dev",
-    "build": "node ../origin.js/packages/cli/dist/bin/ori.js build",
-    "serve": "vite preview"
+    "dev": "node ../origin.js-1/packages/cli/dist/bin/ori.js dev",
+    "build": "node ../origin.js-1/packages/cli/dist/bin/ori.js build",
+    "serve": "vite preview",
+    "stop": "node ../origin.js-1/packages/cli/dist/bin/ori.js shutdown"
   },
   "dependencies": {
-    "@originjs/vite-plugin-assets": "file:../origin.js/packages/vite-plugin-assets",
-    "@originjs/vite-plugin-content": "file:../origin.js/packages/vite-plugin-content",
+    "@originjs/vite-plugin-assets": "file:../origin.js-1/packages/vite-plugin-assets",
+    "@originjs/vite-plugin-content": "file:../origin.js-1/packages/vite-plugin-content",
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
-    "vite-plugin-pages": "file:../origin.js/packages/vite-plugin-pages",
+    "vite-plugin-pages": "file:../origin.js-1/packages/vite-plugin-pages",
     "vue": "^3.0.5",
     "vue-router": "^4.0.11"
   },

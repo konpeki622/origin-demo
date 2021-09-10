@@ -14,6 +14,8 @@ export default defineConfig({
     contentPlugin(),
     // https://github.com/antfu/unplugin-vue-components
     Components({
+      // allow auto load markdown components under `./src/components/`
+      extensions: ['vue', 'md'],
       // allow typescript
       dts: true,
       // allow auto import and register components used in markdown
