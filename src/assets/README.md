@@ -1,4 +1,4 @@
 ## Assets
-Assets contains your project resource files. Automatic loading of global styles is supported.
+Store your project resources here. You can create files with name started with `global-` as global style sheets.
 
 <!-- TODO: npm source link -->
