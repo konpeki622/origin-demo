@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "license": "ISC",
   "scripts": {
-    "dev": "node ../origin.js-1/packages/cli/dist/bin/ori.js dev",
-    "build": "node ../origin.js-1/packages/cli/dist/bin/ori.js build",
+    "dev": "node ../origin.js/packages/cli/dist/bin/ori.js dev",
+    "build": "node ../origin.js/packages/cli/dist/bin/ori.js build",
     "serve": "vite preview",
-    "stop": "node ../origin.js-1/packages/cli/dist/bin/ori.js shutdown"
+    "stop": "node ../origin.js/packages/cli/dist/bin/ori.js shutdown"
   },
   "dependencies": {
     "vue": "^3.0.5",
