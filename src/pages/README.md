@@ -1,5 +1,5 @@
 ## Pages
-Routes will be configured automatically by pages.
+Routes will be configured automatically according to pages.
 
 ### Usage
 1. Normal file name: /user/foo.vue -> /user/foo
