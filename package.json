@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "license": "ISC",
   "scripts": {
-    "dev": "node ../origin.js/packages/cli/dist/bin/ori.js dev",
-    "build": "node ../origin.js/packages/cli/dist/bin/ori.js build",
+    "dev": "vite",
+    "build": "vite build",
     "serve": "vite preview",
     "stop": "node ../origin.js/packages/cli/dist/bin/ori.js shutdown"
   },

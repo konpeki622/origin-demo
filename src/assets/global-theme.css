@@ -1,12 +1,3 @@
-#app main {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    height: calc(100vh - 3.2rem);
-    padding: 1rem;
-}
-
 .light {
     background-color: #fff;
     color: #333366;
@@ -17,13 +8,6 @@
     background-color: #212121;
     color: #E5E5E5;
     transition: all .5s;
-}
-
-#logo {
-    width: 12rem;
-    height: 12rem;
-    object-fit: cover;
-    margin: 4rem 0 1rem 0;
 }
 
 .source-link-box {
@@ -53,7 +37,7 @@
     font-weight: 300;
 }
 
-.text-t4 {
+.text-t2 {
     font-size: 2rem;
     line-height: 3.5rem;
     margin: 0;
@@ -61,6 +45,11 @@
 
 .text-p{
     line-height: 1.4rem;
+    font-size: 1rem;
+}
+
+.text-span{
+    line-height: 1.8rem;
     font-size: 1rem;
 }
 
@@ -83,6 +72,26 @@
 
 .text-layout {
     color: rgba(0, 153, 255, .5)
+}
+
+.text-router-link {
+    font-size: .9rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+.text-router-link:hover {
+    font-size: .9rem;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.text-router-link:visited {
+    color: #ffffff;
+    font-size: .9rem;
+    font-weight: 300;
 }
 
 .normal-input {
@@ -135,13 +144,13 @@
     color: #DBDBDB;
 }
 
-.message-input {
+.userinfo-input {
     background-color: transparent;
     border: 1.5px solid #9999ff;
-    margin-right: 1rem;
+    margin: .5rem;
 }
 
-.message-input:focus {
+.userinfo-input:focus {
     border: 1.5px solid #9999ff;
     outline: none;
 }
@@ -172,6 +181,21 @@
     opacity: 0.4;
 }
 
+.router-link div {
+    height: 2rem;
+    width: 10rem;
+    margin: .5rem;
+    background-color: #9999ff;
+    border-radius: .4rem;
+}
+
+.router-link {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
 /* mobile device */
 @media screen and (max-width: 480px) {
     html {
@@ -181,12 +205,16 @@
         height: device-height;
     }
 
-    .text-t4 {
+    .text-t2 {
         font-size: 1.5rem;
         line-height: 2.4rem;
     }
 
     .theme-ctrl-btn {
         margin-top: 1.8rem;
+    }
+
+    .router-link div {
+        width: 8rem;
     }
 }

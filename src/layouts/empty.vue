@@ -1,9 +1,9 @@
 <template>
-  <p class="text-p">page not found...</p>
+  <router-view />
 </template>
 
 <script>
 export default {
-  name: '404'
+  name: 'Empty'
 }
 </script>

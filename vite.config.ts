@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import globalStyle from '@originjs/vite-plugin-global-style'
-import Components from 'unplugin-vue-components/vite.d.ts'
+import Components from 'unplugin-vue-components/vite'
 import content from '@originjs/vite-plugin-content'
 import pages from '@originjs/vite-plugin-pages'
 
