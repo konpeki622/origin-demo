@@ -1,1 +1,0 @@
-import{c as e,o as t}from"./vendor.5e46d7d3.js";var r={};const n={name:"Index"},o={class:"text-p"};"function"==typeof r&&r(n),n.render=function(r,n,s,a,d,f){return t(),e("p",o,"file starts with '$' is the nested route for the current level index page.")};export{n as default};

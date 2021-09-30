@@ -2,7 +2,7 @@
   <div class="login">
     <input class="normal-input userinfo-input" placeholder="username" type="text" v-model="user.username" />
     <input class="normal-input userinfo-input" placeholder="password" type="password" v-model="user.password" />
-    <button @click="toUsers" class="normal-btn router-btn" :class="btnIsDisabled ? 'router-btn-disabled' : ''">Login</button>
+    <button @click="toUsers" class="normal-btn router-btn" :class="btnIsDisabled ? 'router-btn-disabled' : ''">{{ $t("login") }}</button>
   </div>
 </template>
 
@@ -38,5 +38,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
 }
 </style>
