@@ -6,7 +6,7 @@
       src="../assets/originjs.png"
       class="logo logo-small"
     />
-    <h4 class="text-h4">Origin.js</h4>
+    <h4>Origin.js</h4>
   </div>
   <p class="text-component-desc text-route">
     {{ $t("currentRoute") }}: '{{ currentRoute.fullPath }}'
@@ -34,9 +34,7 @@ export default {
     const router = useRouter()
     const { currentRoute } = router
 
-    console.log(currentRoute)
-
     return { currentRoute, sourceOpitons }
-  },
+  }
 }
 </script>

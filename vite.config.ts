@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
 import path from 'path'
+import vue from '@vitejs/plugin-vue'
 import globalStyle from '@originjs/vite-plugin-global-style'
-import Components from 'unplugin-vue-components/vite'
+import components from 'unplugin-vue-components/vite'
 import content from '@originjs/vite-plugin-content'
 import pages from '@originjs/vite-plugin-pages'
-import Markdown from 'vite-plugin-md'
+import markdown from 'vite-plugin-md'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,7 +20,7 @@ export default defineConfig({
       include: [/\.vue$/, /\.md$/],
     }),
     globalStyle(),
-    Components({
+    components({
       // allow auto load markdown components under `./src/components/`
       extensions: ['vue', 'md'],
       // allow typescript
@@ -30,10 +30,10 @@ export default defineConfig({
     }),
     content(),
     pages(),
-    Markdown()
+    markdown()
   ],
   define: {
     __VUE_I18N_FULL_INSTALL__: true,
     __VUE_I18N_LEGACY_API__: true,
-  }
+  },
 })

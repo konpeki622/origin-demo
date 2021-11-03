@@ -3,12 +3,11 @@
     <router-view />
     <div>
       <button
-        v-if="globalStylePluginIsUsed"
         type="button"
         @click="changeMode"
         class="normal-btn theme-ctrl-btn"
       >
-        {{ !isLight ? $t("lightMode") : $t("darkMode") }}
+        {{ !isLight ? $t('lightMode') : $t('darkMode') }}
       </button>
       <button
         type="button"
@@ -28,10 +27,6 @@ import { useI18n } from 'vue-i18n'
 export default {
   name: 'App',
   setup: () => {
-    // if '@originjs/vite-plugin-global-style' has been imported, you can
-    // set 'globalStylePluginIsUsed = ref(true)' and switch theme by clicking button
-    const globalStylePluginIsUsed = ref(true)
-
     const isLight = ref(true)
 
     const changeMode = () => {
@@ -47,8 +42,8 @@ export default {
       }
     }
 
-    return { globalStylePluginIsUsed, isLight, changeMode, changeLocale }
-  },
+    return { isLight, changeMode, changeLocale }
+  }
 }
 </script>
 
@@ -59,6 +54,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   height: calc(100vh - 3.2rem);
+  min-height: 568px;
   padding: 1rem;
   display: flex;
   flex-direction: column;

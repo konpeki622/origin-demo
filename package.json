@@ -1,29 +1,29 @@
 {
   "name": "testAllPlugins",
   "version": "1.0.0",
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview",
-    "stop": "node ../origin.js/packages/cli/dist/bin/ori.js shutdown"
+    "serve": "vite preview"
   },
   "dependencies": {
-    "vite-plugin-md": "^0.11.1",
     "vue": "^3.0.5",
-    "vue-i18n": "^9.2.0-beta.9",
-    "vue-router": "^4.0.11"
+    "vue-i18n": "^9.2.0-beta.15",
+    "vue-router": "^4.0.11",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@originjs/vite-plugin-global-style":"latest",
+    "unplugin-vue-components":"latest",
+    "@originjs/vite-plugin-content":"latest",
+    "@originjs/vite-plugin-pages":"latest",
+    "vite-plugin-md":"latest",
     "@intlify/vue-i18n-loader": "^3.0.0",
-    "@originjs/vite-plugin-content": "latest",
-    "@originjs/vite-plugin-global-style": "latest",
-    "@originjs/vite-plugin-pages": "latest",
     "@vitejs/plugin-vue": "^1.3.0",
     "@vue/compiler-sfc": "^3.0.5",
     "typescript": "^4.3.2",
-    "unplugin-vue-components": "latest",
-    "vite": "^2.4.4",
+    "vite": "^2.6.13",
     "vue-tsc": "^0.2.2"
   }
 }
