@@ -9,6 +9,7 @@ import markdown from 'vite-plugin-md'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/origin-demo/',
   resolve: {
     alias: [{
       find: '@',
